@@ -21,7 +21,7 @@ export const greetReducer = (state = initialState, action) => {
   console.log(action.type);
   switch (action.type) {
     case GET_MESSAGE_SUCCESS:
-      return { ...state, message: action.data.message };
+      return { ...state, message: action.data };
     default:
       return state;
   }
